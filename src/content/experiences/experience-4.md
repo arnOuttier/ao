@@ -1,12 +1,12 @@
 ---
 
-compagny : la bonne agence
-role : Intégrateur web
-startMonthjob : Juillet 
-endMonthjob : Septembre
-yearJob : 2022
+compagny : Université de Lille - CHRU Lille
+role : Helpdesk - Support informatique
+startMonthjob : Mars 
+endMonthjob : Juillet
+yearJob : 2021
 compagnyimage : /images/pistacheWeb.jpg
-compagnyLink : www.labonneagence.fr
-description : Intégration des maquettes Figma pour le site du théatre MC2 à Grenoble pour l’agence la bonne agence. Intégration en version mobile et desktop.
+compagnyLink : www.chu-lille.fr
+description : Assistance informatique auprès des utilisateurs du CHRU de Lille. Diagnostique et résolution d’un dysfonctionnement numérique. Maintenance poste client. Installation et configuration d’équipements numériques. Configuration imprimantes et réseaux. Gestion des tickets d’incidences.
 
 ---

@@ -1,12 +1,12 @@
 ---
 
-compagny : la bonne agence
+compagny : Photonis - la bonne agence
 role : Intégrateur web
-startMonthjob : Juillet 
-endMonthjob : Septembre
+startMonthjob : Septembre 
+endMonthjob : Octobre
 yearJob : 2022
 compagnyimage : /images/pistacheWeb.jpg
-compagnyLink : www.labonneagence.fr
-description : Intégration des maquettes Figma pour le site du théatre MC2 à Grenoble pour l’agence la bonne agence. Intégration en version mobile et desktop.
+compagnyLink : www.photonis.com
+description : Intégration des maquettes Figma pour une refonte du site de la société Photonis. Styles et structures sous Drupal. Développement pour un site responsive en version mobile et desktop
 
 ---

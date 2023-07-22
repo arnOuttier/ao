@@ -1,13 +1,14 @@
 ---
 
-compagny : la bonne agence
+compagny : Bergerat Monnoyeur - la bonne agence
 role : Intégrateur web
-startMonthjob : Juillet 
-endMonthjob : Septembre
+startMonthjob : Octobre 
+endMonthjob : Novembre
 yearJob : 2022
 compagnyimage : /images/pistacheWeb.jpg
-compagnyLink : www.labonneagence.com
-description : Intégration des maquettes Figma pour le site du théatre MC2 à Grenoble pour l’agence la bonne agence. Intégration en version mobile et desktop.
+compagnyLink : www.bm-cat.com/fr-fr
+description : Intégration des maquettes Figma pour le site intranet des partenaires Bergerat Monnoyeur. Intégration en responsive pour la version mobile et desktop. Utitlisation du CMS Drupal.
+
 
 ---
 
