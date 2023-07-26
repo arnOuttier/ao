@@ -35,7 +35,7 @@ const allEducation = await Astro.glob("../content/education/*.md");
       ))
     }
   </ul>
-  <a href="" download="/documents/cv-arnaud-outtier-it-fr.pdf" class="btn-primary">Download CV</a>
+  <a href="" download="/documents/cv-arnaud-outtier-it-fr.pdf" class="btn btn-primary">Download CV</a>
 </section>
 
 <style lang="scss">
@@ -122,6 +122,7 @@ const allEducation = await Astro.glob("../content/education/*.md");
   }
 
   a {
+    display: block;
     width: 100%;
   }
 </style>
