@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Gallery from "../components/Gallery.astro";
+import Experiences from "../components/Experiences.astro";
+import Newsletter from "../components/Newsletter.astro";
+import Education from "../components/Education.astro";
+import Skills from "../components/Skills.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Arnaud Outtier">
+  <aside>
+    <Hero />
+    <Gallery />
+  </aside>
+  <main id="main">
+    <Experiences />
+    <div class="group">
+      <Newsletter />
+      <Education />
+      <Skills />
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style lang="scss">
+  #main {
+    width: min(1200px, 90vw);
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+
+    /* .group */
+    > :nth-child(2) {
+      display: grid;
+      row-gap: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #main {
+      /* .group */
+      > :nth-child(2) {
+        padding-inline: clamp(4rem, 5vw + 3rem, 8rem) 0;
+      }
+    }
+  }
+</style>

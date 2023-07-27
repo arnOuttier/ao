@@ -1,0 +1,51 @@
+---
+---
+
+<form id="newsletter" action="/thank-you">
+  <div class="newsletter__header">
+    <img width="20" height="20" src="/icons/icon-newsletter.svg" alt="icon" />
+    <h2>Stay up to date</h2>
+  </div>
+  <p>Get notified when I publish something new, and unsubscribe at any time.</p>
+  <div class="newsletter-input">
+    <input
+      type="email"
+      placeholder="Email address"
+      aria-label="Email address"
+      required=""
+    />
+    <button class="btn btn-secondary" type="submit">Join</button>
+  </div>
+</form>
+
+<style lang="scss">
+  #newsletter {
+    padding: 1.5rem;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 1rem;
+  }
+
+  .newsletter__header {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  h2 {
+    color: rgb(24, 24, 27);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    color: rgb(82, 82, 91);
+    line-height: 1.5rem;
+  }
+
+  .newsletter-input {
+    margin-top: 1.5rem;
+
+    display: flex;
+    column-gap: 0.5rem;
+  }
+</style>

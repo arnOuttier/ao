@@ -1,0 +1,128 @@
+---
+const allExperiences = await Astro.glob("../content/experiences/*.md");
+---
+
+<section id="experiences">
+  <!-- <div class="experience__header">
+    <img width="20" height="20" src="/icons/icon-education.svg" alt="icon" />
+    <h2>Education</h2>
+  </div> -->
+
+  {
+    allExperiences.map((experience) => (
+      <article>
+        <time>
+          {experience.frontmatter.startMonthjob} -
+          {experience.frontmatter.endMonthjob},{experience.frontmatter.yearJob}
+        </time>
+        <h2>
+          {experience.frontmatter.role} - {experience.frontmatter.compagny}
+        </h2>
+        <p class="experience-description">
+          {experience.frontmatter.description}
+        </p>
+        <div class="card-link">
+          <a
+            class="read-more"
+            href={experience.frontmatter.compagnyLink}
+            target="_blank"
+          >
+            {experience.frontmatter.compagnyLink}
+          </a>
+          <img
+            width="16"
+            height="16"
+            class="link-icon-arrow"
+            src="/icons/icon-arrow-16.png"
+            alt="icon arrow"
+          />
+        </div>
+      </article>
+    ))
+  }
+</section>
+
+<style lang="scss">
+  #experiences {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+
+  article {
+    time,
+    a.read-more {
+      font-weight: 500;
+      line-height: 1.5rem;
+      font-size: 0.875rem;
+    }
+
+    time {
+      color: rgb(161, 161, 170);
+      padding-inline: 1rem 0;
+      border-left: 2px solid rgb(229, 231, 235);
+    }
+
+    h2 {
+      width: fit-content;
+      color: var(--clr_primary);
+      font-size: 1rem;
+      letter-spacing: -0.025em;
+    }
+
+    .experience-description {
+      color: rgb(82, 82, 91);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+
+    .card-link {
+      width: fit-content;
+
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(20, 184, 166);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    a.read-more {
+      color: rgb(20, 184, 166);
+    }
+
+    .link-icon-arrow {
+      transform: rotate(-90deg);
+    }
+  }
+
+  @media (min-width: 850px) {
+    article {
+      padding: 1rem;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        border-radius: 1rem;
+        background-color: rgb(250, 250, 250);
+      }
+    }
+  }
+</style>
