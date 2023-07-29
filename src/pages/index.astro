@@ -1,16 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Siteheader from "../components/SiteHeader.astro";
 import Hero from "../components/Hero.astro";
 import Gallery from "../components/Gallery.astro";
 import Experiences from "../components/Experiences.astro";
 import Newsletter from "../components/Newsletter.astro";
 import Education from "../components/Education.astro";
 import Skills from "../components/Skills.astro";
-import Footer from "../components/Footer.astro";
+import Sitefooter from "../components/SiteFooter.astro";
 ---
 
 <Layout title="Arnaud Outtier">
-  <aside>
+  <Siteheader />
+  <aside id="aside">
     <Hero />
     <Gallery />
   </aside>
@@ -22,10 +24,11 @@ import Footer from "../components/Footer.astro";
       <Skills />
     </div>
   </main>
-  <Footer />
+  <Sitefooter />
 </Layout>
 
 <style lang="scss">
+  /* #main */
   #main {
     width: min(1200px, 90vw);
     margin-inline: auto;
@@ -41,7 +44,14 @@ import Footer from "../components/Footer.astro";
     }
   }
 
+  /* #aside */
+  #aside {
+    display: grid;
+    row-gap: 5rem;
+  }
+
   @media (min-width: 1024px) {
+    /* #main */
     #main {
       /* .group */
       > :nth-child(2) {

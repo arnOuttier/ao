@@ -3,11 +3,6 @@ const allExperiences = await Astro.glob("../content/experiences/*.md");
 ---
 
 <section id="experiences">
-  <!-- <div class="experience__header">
-    <img width="20" height="20" src="/icons/icon-education.svg" alt="icon" />
-    <h2>Education</h2>
-  </div> -->
-
   {
     allExperiences.map((experience) => (
       <article>
@@ -68,6 +63,7 @@ const allExperiences = await Astro.glob("../content/experiences/*.md");
       color: var(--clr_primary);
       font-size: 1rem;
       letter-spacing: -0.025em;
+      line-height: 1.75rem;
     }
 
     .experience-description {

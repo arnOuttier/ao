@@ -35,7 +35,24 @@ const allEducation = await Astro.glob("../content/education/*.md");
       ))
     }
   </ul>
-  <a href="" download="/documents/cv-arnaud-outtier-it-fr.pdf" class="btn btn-primary">Download CV</a>
+
+  <a href="" download="cv-arnaud-outtier-it-fr.pdf" class="btn btn-primary"
+    >Download CV
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="feather feather-arrow-down"
+      ><line x1="12" y1="5" x2="12" y2="19"></line><polyline
+        points="19 12 12 19 5 12"></polyline></svg
+    >
+  </a>
 </section>
 
 <style lang="scss">
@@ -122,7 +139,9 @@ const allEducation = await Astro.glob("../content/education/*.md");
   }
 
   a {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
   }
 </style>
