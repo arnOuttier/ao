@@ -1,4 +1,6 @@
 ---
+import "../scss/darkMode.scss";
+
 export interface Props {
   title: string;
 }
@@ -13,6 +15,7 @@ const { title } = Astro.props;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -23,11 +26,14 @@ const { title } = Astro.props;
 <style is:global>
   :root {
     --clr_primary: #001d26;
+    --clr-light: #fdffc4;
+
+    --background: var(--clr-dark);
   }
 
   html {
     font-family: ui-sans-serif, system-ui, sans-serif;
-    background-color: #f6f6f6;
+    background-color: var(--background);
   }
 
   body {
@@ -108,3 +114,7 @@ const { title } = Astro.props;
     }
   }
 </style>
+
+<script>
+  import "../js/darkMode.js";
+</script>
