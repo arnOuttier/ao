@@ -1,0 +1,55 @@
+/* Buttons */
+
+button,
+.btn {
+  cursor: pointer;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 0.375rem;
+  transition: all 0.4s ease;
+}
+
+.btn-primary {
+  padding-block: 1rem;
+  background-color: rgb(244, 244, 245);
+  font-weight: 500;
+
+  &:hover {
+    background-color: rgb(229, 231, 235);
+    color: rgb(20, 184, 166);
+  }
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+
+  font-weight: 600;
+  background-color: var(--clr_primary);
+  color: #fff;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Inputs */
+
+input {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(42, 39, 39, 0.1);
+  border-radius: 0.375rem;
+  color: rgba(42, 39, 39, 0.5);
+  box-shadow: rgba(39, 39, 42, 0.05) 0 4px 6px -1px;
+
+  flex-grow: 1;
+
+  &::placeholder {
+    color: rgba(42, 39, 39, 0.3);
+  }
+}

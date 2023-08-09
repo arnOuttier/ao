@@ -1,0 +1,9 @@
+[data-theme="dark"] {
+  --background: var(--clr-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--clr-dark);
+  }
+}
