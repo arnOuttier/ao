@@ -28,23 +28,21 @@ const { title } = Astro.props;
   :root {
     --clr-light: #ffffff;
     --clr-dark: black;
-  }
-
-  @media (prefers-color-scheme: light) {
     --background: var(--clr-light);
   }
 
-  [data-theme="light"] {
-    --background: var(--clr-light);
+  [data-theme="dark"] {
+    --background: var(--clr-dark);
   }
 
-  html {
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    background-color: var(--background);
-    transition: background-color 0.5s ease;
+  @media (prefers-color-scheme: dark) {
+    --background: var(--clr-dark);
   }
 
   body {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    background-color: var(--background);
+    transition: background-color 0.5s ease;
     overflow-x: hidden;
     margin: 0;
 
@@ -54,5 +52,5 @@ const { title } = Astro.props;
 </style>
 
 <script>
-  import "../js/themeMode.js";
+  import "../js/themeMode2.js";
 </script>

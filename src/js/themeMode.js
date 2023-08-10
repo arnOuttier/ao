@@ -3,7 +3,6 @@ let themeMode = localStorage.getItem('theme');
 const themeModeToggle = document.querySelector('button.toggle-mode');
 const iconMode = document.querySelectorAll(".icon-mode");
 
-
 const setTheme = themeName => {
     localStorage.setItem('theme', themeName);
 }
