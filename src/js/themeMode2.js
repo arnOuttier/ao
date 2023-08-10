@@ -1,5 +1,3 @@
-import { log } from "astro/dist/core/logger/core";
-
 const buttonToggleMode = document.querySelector('button.toggle-mode');
 const iconLight = document.querySelector(".icon-light");
 const iconDark = document.querySelector(".icon-dark");
@@ -48,6 +46,8 @@ toggleIconThemeMode(darkModeState)
 // for older browsers define the function using the function keyword.
 useDark.addEventListener("change", (event) => {
     toggleDarkMode(event.matches)
+    setDarkModeLocalStorage(event.matches)
+    toggleIconThemeMode(event.matches)
 });
 
 
