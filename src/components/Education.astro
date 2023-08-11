@@ -58,7 +58,7 @@ const allEducation = await Astro.glob("../content/education/*.md");
 <style lang="scss">
   #education {
     padding: 1.5rem;
-    border: 1px solid rgb(229, 231, 235);
+    border: 1px solid var(--clr_border);
     border-radius: 1rem;
   }
 
@@ -75,7 +75,7 @@ const allEducation = await Astro.glob("../content/education/*.md");
 
   ul {
     list-style: none;
-    padding-inline: 0.5rem 0;
+    padding-inline: 0;
   }
 
   li {
@@ -139,5 +139,11 @@ const allEducation = await Astro.glob("../content/education/*.md");
     justify-content: center;
     align-items: center;
     column-gap: 0.5rem;
+  }
+
+  @media (min-width: 840px) {
+    ul {
+      padding-inline: 0.5rem 0;
+    }
   }
 </style>

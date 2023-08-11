@@ -1,6 +1,7 @@
 :root {
   --clr_light_200: rgb(229, 231, 235);
   --clr_light_300: #fdffc4;
+  --clr_light_400: rgb(244, 244, 245);
 
   --clr_dark_200: rgb(161, 161, 170);
   --clr_dark_300: rgb(113, 113, 122);
@@ -15,6 +16,7 @@
   --clr_title: var(--clr_primary);
   --clr_text: var(--clr_secondary);
   --clr_links: rgb(20, 184, 166);
+  --clr_border: var(--clr_light_400);
 
   --foreground: var(--clr_light);
   --background: var(--clr_light);
@@ -22,7 +24,14 @@
   --ff_primary: ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Theme Dark */
+
 [data-theme="dark"] {
+  --clr_border: rgba(63, 63, 70, 0.4);
+
   --foreground: var(--clr_light);
   --background: var(--clr_dark_600);
+
+  --clr_primary: var(--clr_light_300);
+  --clr_secondary: var(--clr_dark_200);
 }

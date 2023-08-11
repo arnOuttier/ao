@@ -30,6 +30,7 @@ const toggleIconThemeMode = (state) => {
     if (state) {
         iconLight.classList.add("visible");
         iconDark.classList.remove('visible')
+        toggleDarkMode(darkModeState);
     }
     else {
         iconDark.classList.add("visible");
