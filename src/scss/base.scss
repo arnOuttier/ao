@@ -12,3 +12,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr_title);
+}
+
+p {
+  color: var(--clr_text);
+}

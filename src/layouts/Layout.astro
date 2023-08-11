@@ -1,4 +1,5 @@
 ---
+import "../scss/variables.scss";
 import "../scss/base.scss";
 import "../scss/buttons.scss";
 import "../scss/dark-theme.scss";
@@ -25,22 +26,8 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
-  :root {
-    --clr-light: #ffffff;
-    --clr-dark: black;
-    --background: var(--clr-light);
-  }
-
-  [data-theme="dark"] {
-    --background: var(--clr-dark);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    --background: var(--clr-dark);
-  }
-
   body {
-    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--ff_primary);
     background-color: var(--background);
     transition: background-color 0.2s ease;
     overflow-x: hidden;
@@ -48,6 +35,10 @@ const { title } = Astro.props;
 
     display: grid;
     row-gap: clamp(4rem, 3.0909rem + 3.8788vw, 6rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --background: var(--clr_dark_600);
   }
 </style>
 

@@ -1,0 +1,28 @@
+:root {
+  --clr_light_200: rgb(229, 231, 235);
+  --clr_light_300: #fdffc4;
+
+  --clr_dark_200: rgb(161, 161, 170);
+  --clr_dark_300: rgb(113, 113, 122);
+  --clr_dark_400: rgb(82, 82, 91);
+  --clr_dark_500: rgb(39, 39, 42);
+  --clr_dark_600: rgb(24, 24, 27);
+
+  --clr_primary: #001d26;
+  --clr_secondary: var(--clr_dark_400);
+
+  --clr_body: var(--clr_dark_300);
+  --clr_title: var(--clr_primary);
+  --clr_text: var(--clr_secondary);
+  --clr_links: rgb(20, 184, 166);
+
+  --foreground: var(--clr_light);
+  --background: var(--clr_light);
+
+  --ff_primary: ui-sans-serif, system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --foreground: var(--clr_light);
+  --background: var(--clr_dark_600);
+}
