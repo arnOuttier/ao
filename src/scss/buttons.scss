@@ -1,4 +1,4 @@
-/* Buttons */
+/* BUTTONS */
 
 button,
 .btn {
@@ -13,6 +13,8 @@ button,
   transition: all 0.4s ease;
 }
 
+/* Button Primary */
+
 .btn-primary {
   padding-block: 1rem;
   background-color: rgb(244, 244, 245, 0.5);
@@ -23,6 +25,8 @@ button,
     color: rgb(20, 184, 166);
   }
 }
+
+/* Button Secondary */
 
 .btn-secondary {
   padding: 0.5rem 1rem;
@@ -35,7 +39,42 @@ button,
   }
 }
 
-/* Inputs */
+/* Button Toggle Mode */
+
+button.toggle-mode {
+  width: 48px;
+  height: 40px;
+  border: 1px solid var(--clr_border_200);
+  border-radius: 22px;
+  box-shadow: rgba(39, 39, 42, 0.05) 0 4px 6px -1px;
+
+  display: grid;
+  place-items: center;
+
+  > * {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  svg {
+    path {
+      transition: fill 0.4s ease-in-out;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: var(--clr_primary);
+      }
+    }
+  }
+}
+
+/* INPUTS */
 
 input {
   font-size: 0.875rem;
@@ -54,9 +93,11 @@ input {
   }
 }
 
-/* Theme Dark */
+/*  ! THEME DARK ! */
 
 :is([data-theme="dark"]) {
+  /* BUTTONS */
+
   .btn-primary {
     background-color: rgb(39, 39, 42, 0.5);
     color: var(--clr_light_300);
@@ -75,7 +116,11 @@ input {
     }
   }
 
-  /* Inputs */
+  button.toggle-mode {
+    background-color: var(--clr_dark_500);
+  }
+
+  /* INPUTS */
 
   input {
     &::placeholder {
