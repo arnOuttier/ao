@@ -20,6 +20,7 @@
   --clr_border: var(--clr_light_400);
 
   --clr_bg_100: var(--clr_light_400);
+  --clr_bg_200: rgb(244, 244, 245, 0.5);
 
   --background: var(--clr_light);
 
@@ -30,7 +31,7 @@
 
 [data-theme="dark"] {
   --clr_border: rgba(63, 63, 70, 0.4);
-  --clr_bg_100: rgba(39, 39, 42, 0.5);
+  --clr_bg_200: rgba(39, 39, 42, 0.5);
 
   --background: var(--clr_dark_600);
 
