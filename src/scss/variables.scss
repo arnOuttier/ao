@@ -11,6 +11,7 @@
 
   --clr_primary: #001d26;
   --clr_secondary: var(--clr_dark_400);
+  --clr_tertiary: var(--clr_dark_500);
 
   --clr_body: var(--clr_dark_300);
   --clr_title: var(--clr_primary);
@@ -18,7 +19,8 @@
   --clr_links: rgb(20, 184, 166);
   --clr_border: var(--clr_light_400);
 
-  --foreground: var(--clr_light);
+  --clr_bg_100: var(--clr_light_400);
+
   --background: var(--clr_light);
 
   --ff_primary: ui-sans-serif, system-ui, sans-serif;
@@ -28,8 +30,8 @@
 
 [data-theme="dark"] {
   --clr_border: rgba(63, 63, 70, 0.4);
+  --clr_bg_100: rgba(39, 39, 42, 0.5);
 
-  --foreground: var(--clr_light);
   --background: var(--clr_dark_600);
 
   --clr_primary: var(--clr_light_300);
