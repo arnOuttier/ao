@@ -39,41 +39,6 @@ button,
   }
 }
 
-/* Button Toggle Mode */
-
-button.toggle-mode {
-  width: 48px;
-  height: 40px;
-  border: 1px solid var(--clr_border_200);
-  border-radius: 22px;
-  box-shadow: rgba(39, 39, 42, 0.05) 0 4px 6px -1px;
-
-  display: grid;
-  place-items: center;
-
-  > * {
-    display: none;
-  }
-
-  .visible {
-    display: block;
-  }
-
-  svg {
-    path {
-      transition: fill 0.4s ease-in-out;
-    }
-  }
-
-  &:hover {
-    svg {
-      path {
-        fill: var(--clr_primary);
-      }
-    }
-  }
-}
-
 /* INPUTS */
 
 input {

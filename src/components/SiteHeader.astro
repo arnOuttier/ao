@@ -54,8 +54,24 @@
         </g>
       </g>
     </svg>
-    <i class="icon-mode icon-dark">Nuit</i>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="icon-mode icon-dark"
+      width="24"
+      height="24"
+      ><path
+        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+        id="id_101"
+        style="stroke: rgb(20, 184, 166);"></path></svg
+    >
   </button>
+  <button class="btn lang-toggle">En</button>
 </header>
 
 <style lang="scss">
@@ -66,9 +82,54 @@
 
     display: flex;
     justify-content: flex-end;
+    column-gap: 0.5rem;
   }
 
-  i {
-    color: #000000;
+  /* Button Toggle Mode */
+
+  button.toggle-mode {
+    width: 48px;
+    height: 40px;
+    border: 1px solid var(--clr_border_200);
+    border-radius: 22px;
+    box-shadow: rgba(39, 39, 42, 0.05) 0 4px 6px -1px;
+
+    display: grid;
+    place-items: center;
+
+    > * {
+      display: none;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    &:hover {
+      svg {
+        path {
+          transition: all 0.4s ease-in-out;
+        }
+
+        &.icon-light {
+          path {
+            fill: var(--clr_primary);
+          }
+        }
+
+        &.icon-dark {
+          path {
+            stroke: var(--clr_primary) !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* Button Lang Toggle */
+
+  button.lang-toggle {
+    color: var(--clr_primary);
+    text-decoration: underline;
   }
 </style>

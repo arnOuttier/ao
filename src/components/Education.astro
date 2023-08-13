@@ -4,7 +4,23 @@ const allEducation = await Astro.glob("../content/education/*.md");
 
 <section id="education">
   <div class="education__header">
-    <img width="20" height="20" src="/icons/icon-education.svg" alt="icon" />
+    <picture>
+      <source
+        srcset="/icons/icon-education-white.svg"
+        media="
+        (prefers-color-scheme:
+        dark)
+        or
+        (color-scheme:
+        dark)"
+      />
+      <img
+        width="20"
+        height="20"
+        src="/icons/icon-education.svg"
+        alt="icon education"
+      />
+    </picture>
     <h2>Education</h2>
   </div>
   <ul>

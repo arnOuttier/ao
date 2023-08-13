@@ -8,18 +8,37 @@
   </div>
   <ul>
     <li>
-      <img width="30" height="30" src="/icons/icon-html.svg" alt="icon html" />
+      <picture>
+        <source
+          srcset="/icons/icon-html-white.svg"
+          media="(prefers-color-scheme: dark) and (color-scheme: dark)"
+        />
+        <img
+          width="30"
+          height="30"
+          src="/icons/icon-html.svg"
+          alt="icon html"
+          decoding="sync"
+        /></picture
+      >
     </li>
     <li>
       <img width="30" height="30" src="/icons/icon-css.svg" alt="icon css" />
     </li>
     <li>
-      <img
-        width="30"
-        height="30"
-        src="/icons/icon-js.svg"
-        alt="icon javascript"
-      />
+      <picture>
+        <source
+          srcset="/icons/icon-js-white.svg"
+          media="(prefers-color-scheme: dark)"
+        />
+        <img
+          width="30"
+          height="30"
+          src="/icons/icon-js.svg"
+          alt="icon javascript"
+          decoding="sync"
+        />
+      </picture>
     </li>
     <li>
       <img
@@ -92,44 +111,44 @@
     <li><span>GLPI</span></li>
     <li><span>PRTG</span></li>
   </ul>
-</section>
 
-<style lang="scss">
-  #skills {
-    padding: 1.5rem;
-    border: 1px solid var(--clr_border_100);
-    border-radius: 1rem;
-  }
-
-  .skills__header {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  h2 {
-    font-size: 0.875rem;
-    line-height: 1rem;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-    align-items: center;
-    gap: 3rem;
-  }
-
-  li {
-    max-width: 30px;
-
-    span {
-      font-size: 0.8125rem;
-      font-weight: 600;
-      text-align: center;
+  <style lang="scss">
+    #skills {
+      padding: 1.5rem;
+      border: 1px solid var(--clr_border_100);
+      border-radius: 1rem;
     }
-  }
-</style>
+
+    .skills__header {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+      align-items: center;
+      gap: 3rem;
+    }
+
+    li {
+      max-width: 30px;
+
+      span {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  </style>
+</section>
