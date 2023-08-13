@@ -7,12 +7,13 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="generator" content="Astro v2.8.1">
     <title>Arnaud Outtier</title>
-  <link rel="stylesheet" href="/_astro/index.7f55db62.css" /></head>
+  <link rel="stylesheet" href="/_astro/index.091bc77c.css" /><script type="module">const s=document.querySelector("button.toggle-mode"),a=document.querySelector(".icon-light"),d=document.querySelector(".icon-dark");let t=!1;const r=window.matchMedia("(prefers-color-scheme: dark)");function o(e){localStorage.setItem("dark",e),e?document.documentElement.setAttribute("data-theme","dark"):document.documentElement.removeAttribute("data-theme","dark"),t=e}const c=e=>{e?(a.classList.add("visible"),d.classList.remove("visible"),o(t)):(d.classList.add("visible"),a.classList.remove("visible"))};o(localStorage.getItem("dark")=="true");c(t);r.addEventListener("change",e=>{o(e.matches),c(e.matches)});s.addEventListener("click",()=>{t=!t,o(t),c(t)});
+</script></head>
   <body>
     
   <header id="site-header" class="astro-CTG3M53H">
   <button class="btn toggle-mode astro-CTG3M53H">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129" width="24" height="24" class="astro-CTG3M53H">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129" width="24" height="24" class="icon-mode icon-light astro-CTG3M53H">
       <g class="astro-CTG3M53H">
         <g class="astro-CTG3M53H">
           <path fill="rgb(20, 184, 166)" d="m64.5,92.6c15.5,0 28-12.6 28-28s-12.6-28-28-28-28,12.6-28,28 12.5,28 28,28zm0-47.9c11,0 19.9,8.9 19.9,19.9 0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-11 8.9-19.9 19.9-19.9z" class="astro-CTG3M53H"></path>
@@ -27,7 +28,9 @@
         </g>
       </g>
     </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-mode icon-dark astro-CTG3M53H" width="24" height="24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" id="id_101" style="stroke: rgb(20, 184, 166);" class="astro-CTG3M53H"></path></svg>
   </button>
+  <button class="btn lang-toggle astro-CTG3M53H">En</button>
 </header>
   <aside id="aside" class="astro-J7PV25F6">
     <section id="hero" class="astro-BBE6DXRZ">
@@ -159,13 +162,21 @@
   </div>
   <p class="astro-MOTRWRJI">Get notified when I publish something new, and unsubscribe at any time.</p>
   <div class="newsletter-input astro-MOTRWRJI">
-    <input type="email" placeholder="Email address" aria-label="Email address" required="" class="astro-MOTRWRJI">
-    <button class="btn btn-secondary astro-MOTRWRJI" type="submit">Join</button>
+    <input type="email" placeholder="Email address - Démo !" aria-label="Email address" required="" class="astro-MOTRWRJI">
+    <button disabled class="btn btn-secondary astro-MOTRWRJI" type="submit">Join</button>
   </div>
 </form>
       <section id="education" class="astro-2GVRK3WR">
   <div class="education__header astro-2GVRK3WR">
-    <img width="20" height="20" src="/icons/icon-education.svg" alt="icon" class="astro-2GVRK3WR">
+    <picture class="astro-2GVRK3WR">
+      <source srcset="/icons/icon-education-white.svg" media="
+        (prefers-color-scheme:
+        dark)
+        or
+        (color-scheme:
+        dark)" class="astro-2GVRK3WR">
+      <img width="20" height="20" src="/icons/icon-education.svg" alt="icon education" class="astro-2GVRK3WR">
+    </picture>
     <h2 class="astro-2GVRK3WR">Education</h2>
   </div>
   <ul class="astro-2GVRK3WR">
@@ -228,13 +239,18 @@
   </div>
   <ul class="astro-AB4IHPZS">
     <li class="astro-AB4IHPZS">
-      <img width="30" height="30" src="/icons/icon-html.svg" alt="icon html" class="astro-AB4IHPZS">
+      <picture class="astro-AB4IHPZS">
+        <source srcset="/icons/icon-html-white.svg" media="(prefers-color-scheme: dark) and (color-scheme: dark)" class="astro-AB4IHPZS">
+        <img width="30" height="30" src="/icons/icon-html.svg" alt="icon html" decoding="sync" class="astro-AB4IHPZS"></picture>
     </li>
     <li class="astro-AB4IHPZS">
       <img width="30" height="30" src="/icons/icon-css.svg" alt="icon css" class="astro-AB4IHPZS">
     </li>
     <li class="astro-AB4IHPZS">
-      <img width="30" height="30" src="/icons/icon-js.svg" alt="icon javascript" class="astro-AB4IHPZS">
+      <picture class="astro-AB4IHPZS">
+        <source srcset="/icons/icon-js-white.svg" media="(prefers-color-scheme: dark)" class="astro-AB4IHPZS">
+        <img width="30" height="30" src="/icons/icon-js.svg" alt="icon javascript" decoding="sync" class="astro-AB4IHPZS">
+      </picture>
     </li>
     <li class="astro-AB4IHPZS">
       <img width="30" height="30" src="/icons/icon-vuejs.svg" alt="icon vuejs" class="astro-AB4IHPZS">
@@ -267,13 +283,19 @@
     <li class="astro-AB4IHPZS"><span class="astro-AB4IHPZS">GLPI</span></li>
     <li class="astro-AB4IHPZS"><span class="astro-AB4IHPZS">PRTG</span></li>
   </ul>
+
+  
 </section>
     </div>
   </main>
   <footer id="site-footer" class="astro-GCN2MC3V">
   <p class="astro-GCN2MC3V">
-    © <!-- -->2023<!-- --> Arnaud Outtier Personal Website.
+    © <!-- -->2023<!-- --> Arnaud Outtier Personal Website. Inspiration : <a href="https://spotlight.tailwindui.com" target="_blank" class="astro-GCN2MC3V">
+      https://spotlight.tailwindui.com
+    </a>
   </p>
 </footer>
 
-  </body></html>
+  
+
+</body></html>

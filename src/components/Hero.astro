@@ -121,3 +121,20 @@
     }
   }
 </style>
+
+<style lang="scss" is:global>
+  :is([data-theme="dark"]) .social-menu {
+    /* BUTTONS */
+    svg {
+      path {
+        fill: #71717a;
+      }
+
+      &:hover {
+        path {
+          fill: var(--clr_primary);
+        }
+      }
+    }
+  }
+</style>
