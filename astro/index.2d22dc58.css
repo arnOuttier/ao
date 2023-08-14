@@ -181,7 +181,7 @@ button:where(.astro-CTG3M53H).lang-toggle {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-image: url(../../images/pistacheWeb.jpg);
+  background-image: url(../images/pistacheWeb.jpg);
   background-size: cover;
   background-position: center center;
 }
