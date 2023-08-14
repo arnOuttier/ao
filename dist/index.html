@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="generator" content="Astro v2.8.1">
     <title>Arnaud Outtier</title>
-  <link rel="stylesheet" href="/_astro/index.091bc77c.css" /><script type="module">const s=document.querySelector("button.toggle-mode"),a=document.querySelector(".icon-light"),d=document.querySelector(".icon-dark");let t=!1;const r=window.matchMedia("(prefers-color-scheme: dark)");function o(e){localStorage.setItem("dark",e),e?document.documentElement.setAttribute("data-theme","dark"):document.documentElement.removeAttribute("data-theme","dark"),t=e}const c=e=>{e?(a.classList.add("visible"),d.classList.remove("visible"),o(t)):(d.classList.add("visible"),a.classList.remove("visible"))};o(localStorage.getItem("dark")=="true");c(t);r.addEventListener("change",e=>{o(e.matches),c(e.matches)});s.addEventListener("click",()=>{t=!t,o(t),c(t)});
+  <link rel="stylesheet" href="/_astro/index.2d22dc58.css" /><script type="module">const s=document.querySelector("button.toggle-mode"),a=document.querySelector(".icon-light"),d=document.querySelector(".icon-dark");let t=!1;const r=window.matchMedia("(prefers-color-scheme: dark)");function o(e){localStorage.setItem("dark",e),e?document.documentElement.setAttribute("data-theme","dark"):document.documentElement.removeAttribute("data-theme","dark"),t=e}const c=e=>{e?(a.classList.add("visible"),d.classList.remove("visible"),o(t)):(d.classList.add("visible"),a.classList.remove("visible"))};o(localStorage.getItem("dark")=="true");c(t);r.addEventListener("change",e=>{o(e.matches),c(e.matches)});s.addEventListener("click",()=>{t=!t,o(t),c(t)});
 </script></head>
   <body>
     
@@ -157,7 +157,7 @@
     <div class="group astro-J7PV25F6">
       <form id="newsletter" action="/thank-you" class="astro-MOTRWRJI">
   <div class="newsletter__header astro-MOTRWRJI">
-    <img width="20" height="20" src="/icons/icon-newsletter.svg" alt="icon" class="astro-MOTRWRJI">
+    <div class="icon-newsletter astro-MOTRWRJI"></div>
     <h2 class="astro-MOTRWRJI">Stay up to date</h2>
   </div>
   <p class="astro-MOTRWRJI">Get notified when I publish something new, and unsubscribe at any time.</p>
@@ -168,15 +168,7 @@
 </form>
       <section id="education" class="astro-2GVRK3WR">
   <div class="education__header astro-2GVRK3WR">
-    <picture class="astro-2GVRK3WR">
-      <source srcset="/icons/icon-education-white.svg" media="
-        (prefers-color-scheme:
-        dark)
-        or
-        (color-scheme:
-        dark)" class="astro-2GVRK3WR">
-      <img width="20" height="20" src="/icons/icon-education.svg" alt="icon education" class="astro-2GVRK3WR">
-    </picture>
+    <div class="icon-education astro-2GVRK3WR"></div>
     <h2 class="astro-2GVRK3WR">Education</h2>
   </div>
   <ul class="astro-2GVRK3WR">
@@ -234,7 +226,7 @@
 </section>
       <section id="skills" class="astro-AB4IHPZS">
   <div class="skills__header astro-AB4IHPZS">
-    <img width="20" height="20" src="/icons/icon-tools.svg" alt="icon" class="astro-AB4IHPZS">
+    <div class="icon-skills astro-AB4IHPZS"></div>
     <h2 class="astro-AB4IHPZS">Compétences</h2>
   </div>
   <ul class="astro-AB4IHPZS">
@@ -247,10 +239,7 @@
       <img width="30" height="30" src="/icons/icon-css.svg" alt="icon css" class="astro-AB4IHPZS">
     </li>
     <li class="astro-AB4IHPZS">
-      <picture class="astro-AB4IHPZS">
-        <source srcset="/icons/icon-js-white.svg" media="(prefers-color-scheme: dark)" class="astro-AB4IHPZS">
-        <img width="30" height="30" src="/icons/icon-js.svg" alt="icon javascript" decoding="sync" class="astro-AB4IHPZS">
-      </picture>
+      <img width="30" height="30" src="/icons/icon-js.svg" alt="icon javascript" decoding="sync" class="astro-AB4IHPZS">
     </li>
     <li class="astro-AB4IHPZS">
       <img width="30" height="30" src="/icons/icon-vuejs.svg" alt="icon vuejs" class="astro-AB4IHPZS">
@@ -283,8 +272,6 @@
     <li class="astro-AB4IHPZS"><span class="astro-AB4IHPZS">GLPI</span></li>
     <li class="astro-AB4IHPZS"><span class="astro-AB4IHPZS">PRTG</span></li>
   </ul>
-
-  
 </section>
     </div>
   </main>
