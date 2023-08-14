@@ -2,8 +2,8 @@
 
 university : Université de Lille
 domaine : BTS Informatique
-startjob : 2016
-endjob : ""
+startjob : Septembre 2013
+endjob : Juin 2016
 universityImage : /icons/icon-univ-lille.svg
 
 ---

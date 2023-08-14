@@ -156,8 +156,19 @@ const allEducation = await Astro.glob("../content/education/*.md");
 
 <style lang="scss" is:global>
   :is([data-theme="dark"]) {
-    .icon-education {
-      background-image: url("icons/icon-education-white.svg");
+    #education {
+      ul {
+        /* icon université de Lille */
+        > :nth-child(3) {
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+
+      .icon-education {
+        background-image: url("icons/icon-education-white.svg");
+      }
     }
   }
 </style>
