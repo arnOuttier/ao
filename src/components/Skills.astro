@@ -3,7 +3,7 @@
 
 <section id="skills">
   <div class="skills__header">
-    <img width="20" height="20" src="/icons/icon-tools.svg" alt="icon" />
+    <div class="icon-skills"></div>
     <h2>Compétences</h2>
   </div>
   <ul>
@@ -26,19 +26,13 @@
       <img width="30" height="30" src="/icons/icon-css.svg" alt="icon css" />
     </li>
     <li>
-      <picture>
-        <source
-          srcset="/icons/icon-js-white.svg"
-          media="(prefers-color-scheme: dark)"
-        />
-        <img
-          width="30"
-          height="30"
-          src="/icons/icon-js.svg"
-          alt="icon javascript"
-          decoding="sync"
-        />
-      </picture>
+      <img
+        width="30"
+        height="30"
+        src="/icons/icon-js.svg"
+        alt="icon javascript"
+        decoding="sync"
+      />
     </li>
     <li>
       <img
@@ -111,44 +105,73 @@
     <li><span>GLPI</span></li>
     <li><span>PRTG</span></li>
   </ul>
+</section>
 
-  <style lang="scss">
-    #skills {
-      padding: 1.5rem;
-      border: 1px solid var(--clr_border_100);
-      border-radius: 1rem;
+<style lang="scss">
+  #skills {
+    padding: 1.5rem;
+    border: 1px solid var(--clr_border_100);
+    border-radius: 1rem;
+  }
+
+  .skills__header {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon-skills {
+    width: 20px;
+    height: 20px;
+    background-image: url("icons/icon-skills.svg");
+  }
+
+  h2 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    align-items: center;
+    gap: 3rem;
+  }
+
+  li {
+    max-width: 30px;
+
+    span {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-align: center;
     }
+  }
+</style>
 
-    .skills__header {
-      display: flex;
-      align-items: center;
-      column-gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    h2 {
-      font-size: 0.875rem;
-      line-height: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-      align-items: center;
-      gap: 3rem;
-    }
-
+<style lang="scss" is:global>
+  :is([data-theme="dark"]) #skills {
     li {
-      max-width: 30px;
-
       span {
-        font-size: 0.8125rem;
-        font-weight: 600;
-        text-align: center;
+        color: #ffffff;
       }
     }
-  </style>
-</section>
+
+    /* BUTTONS */
+    img {
+      filter: invert(1);
+    }
+  }
+</style>
+
+<style lang="scss" is:global>
+  :is([data-theme="dark"]) {
+    .icon-skills {
+      background-image: url("icons/icon-skills-white.svg");
+    }
+  }
+</style>

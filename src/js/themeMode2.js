@@ -19,7 +19,6 @@ function toggleDarkMode(state) {
     }
 
     darkModeState = state;
-
 }
 
 const toggleIconThemeMode = (state) => {

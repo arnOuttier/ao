@@ -3,7 +3,7 @@
 
 <form id="newsletter" action="/thank-you">
   <div class="newsletter__header">
-    <img width="20" height="20" src="/icons/icon-newsletter.svg" alt="icon" />
+    <div class="icon-newsletter"></div>
     <h2>Stay up to date</h2>
   </div>
   <p>Get notified when I publish something new, and unsubscribe at any time.</p>
@@ -31,6 +31,12 @@
     column-gap: 1rem;
   }
 
+  .icon-newsletter {
+    width: 20px;
+    height: 20px;
+    background-image: url("icons/icon-newsletter.svg");
+  }
+
   h2 {
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -46,5 +52,13 @@
 
     display: flex;
     column-gap: 0.5rem;
+  }
+</style>
+
+<style lang="scss" is:global>
+  :is([data-theme="dark"]) {
+    .icon-newsletter {
+      background-image: url("icons/icon-newsletter-white.svg");
+    }
   }
 </style>
