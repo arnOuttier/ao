@@ -181,7 +181,7 @@ button:where(.astro-CTG3M53H).lang-toggle {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-image: url(images/pistacheWeb.jpg);
+  background-image: url(../../images/pistacheWeb.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -299,7 +299,7 @@ article:where(.astro-6WZDYZP6) .link-icon-arrow:where(.astro-6WZDYZP6) {
   }
 }
 :is([data-theme="dark"]) .icon-newsletter {
-  background-image: url(icons/icon-newsletter-white.svg);
+  background-image: url(../icons/icon-newsletter-white.svg);
 }
 #newsletter:where(.astro-MOTRWRJI) {
   padding: 1.5rem;
@@ -314,7 +314,7 @@ article:where(.astro-6WZDYZP6) .link-icon-arrow:where(.astro-6WZDYZP6) {
 .icon-newsletter:where(.astro-MOTRWRJI) {
   width: 20px;
   height: 20px;
-  background-image: url(icons/icon-newsletter.svg);
+  background-image: url(../icons/icon-newsletter.svg);
 }
 h2:where(.astro-MOTRWRJI) {
   font-size: 0.875rem;
@@ -330,7 +330,7 @@ p:where(.astro-MOTRWRJI) {
   column-gap: 0.5rem;
 }
 :is([data-theme="dark"]) .icon-education {
-  background-image: url(icons/icon-education-white.svg);
+  background-image: url(../icons/icon-education-white.svg);
 }
 #education:where(.astro-2GVRK3WR) {
   padding: 1.5rem;
@@ -345,7 +345,7 @@ p:where(.astro-MOTRWRJI) {
 .icon-education:where(.astro-2GVRK3WR) {
   width: 20px;
   height: 20px;
-  background-image: url(icons/icon-education.svg);
+  background-image: url(../icons/icon-education.svg);
 }
 h2:where(.astro-2GVRK3WR) {
   font-size: 0.875rem;
@@ -413,7 +413,7 @@ a:where(.astro-2GVRK3WR) {
   }
 }
 :is([data-theme="dark"]) .icon-skills {
-  background-image: url(icons/icon-skills-white.svg);
+  background-image: url(../icons/icon-skills-white.svg);
 }
 :is([data-theme="dark"]) #skills li span {
   color: #fff;
@@ -435,7 +435,7 @@ a:where(.astro-2GVRK3WR) {
 .icon-skills:where(.astro-AB4IHPZS) {
   width: 20px;
   height: 20px;
-  background-image: url(icons/icon-skills.svg);
+  background-image: url(../icons/icon-skills.svg);
 }
 h2:where(.astro-AB4IHPZS) {
   font-size: 0.875rem;
