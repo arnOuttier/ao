@@ -19,6 +19,7 @@ button,
   padding-block: 1rem;
   background-color: rgb(244, 244, 245, 0.5);
   font-weight: 500;
+  color: var(--clr_primary);
 
   &:hover {
     background-color: rgb(229, 231, 235, 0.7);
@@ -65,7 +66,6 @@ input {
 
   .btn-primary {
     background-color: rgb(39, 39, 42, 0.5);
-    color: var(--clr_light_300);
 
     &:hover {
       background-color: var(--clr_dark_500);
@@ -84,6 +84,8 @@ input {
   /* INPUTS */
 
   input {
+    background-color: var(--clr_dark_500);
+
     &::placeholder {
       color: var(--clr_secondary);
     }
