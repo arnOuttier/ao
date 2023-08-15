@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Siteheader from "../components/SiteHeader.astro";
-import Hero from "../components/Hero.astro";
+import Intro from "../components/Intro.astro";
 import Gallery from "../components/Gallery.astro";
 import Experiences from "../components/Experiences.astro";
 import Newsletter from "../components/Newsletter.astro";
@@ -12,10 +12,11 @@ import Sitefooter from "../components/SiteFooter.astro";
 
 <Layout title="Arnaud Outtier">
   <Siteheader />
-  <aside id="aside">
-    <Hero />
+  <div id="top-section">
+    <Intro />
     <Gallery />
-  </aside>
+  </div>
+  <!-- #top-section -->
   <main id="main">
     <Experiences />
     <div class="group">
@@ -23,7 +24,9 @@ import Sitefooter from "../components/SiteFooter.astro";
       <Education />
       <Skills />
     </div>
+    <!-- .group -->
   </main>
+  <!-- #main -->
   <Sitefooter />
 </Layout>
 
@@ -37,15 +40,14 @@ import Sitefooter from "../components/SiteFooter.astro";
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
 
-    /* .group */
-    > :nth-child(2) {
+    > .group {
       display: grid;
       row-gap: 3rem;
     }
   }
 
-  /* #aside */
-  #aside {
+  /* #top-section */
+  #top-section {
     display: grid;
     row-gap: 5rem;
   }
@@ -53,8 +55,7 @@ import Sitefooter from "../components/SiteFooter.astro";
   @media (min-width: 1024px) {
     /* #main */
     #main {
-      /* .group */
-      > :nth-child(2) {
+      > .group {
         padding-inline: clamp(4rem, 5vw + 3rem, 8rem) 0;
       }
     }
