@@ -7,6 +7,6 @@ endMonthjob : Juillet
 yearJob : 2021
 compagnyimage : /images/pistacheWeb.jpg
 compagnyLink : https://www.chu-lille.fr
-description : Assistance informatique auprès des utilisateurs du CHRU de Lille. Diagnostique et résolution d’un dysfonctionnement numérique. Maintenance poste client. Installation et configuration d’équipements numériques. Configuration imprimantes et réseaux. Gestion des tickets d’incidences.
+description : Assistance informatique auprès des utilisateurs du CHRU de Lille. Maintenance des postes clients. Installation et configuration d'équipements numériques. Configuration d'imprimantes et de réseaux. Gestion des tickets d'incidents.
 
 ---

@@ -1,6 +1,6 @@
 ---
 
-compagny : Bergerat Monnoyeur - la bonne agence
+compagny : Bergerat Monnoyeur - la bonne agence - Grenoble
 role : Intégrateur web
 startMonthjob : Octobre 
 endMonthjob : Novembre
