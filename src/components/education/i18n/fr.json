@@ -1,0 +1,23 @@
+[
+    {
+        "university": "Citizen Evolution",
+        "domaine": "Technicien d'exploitation",
+        "startjob": "Mai 2023",
+        "endjob": "Juil 2023",
+        "universityImage": "/images/citizen-evolution.jpeg"
+    },
+    {
+        "university": "M2I Formation",
+        "domaine": "Testeur Logiciel ISTQB",
+        "startjob": "Nov 2019",
+        "endjob": "Mars 2020",
+        "universityImage": "/icons/m2iformation.svg"
+    },
+    {
+        "university": "Université de Lille",
+        "domaine": "BTS Informatique",
+        "startjob": "Septembre 2013",
+        "endjob": "Juin 2016",
+        "universityImage": "/icons/icon-univ-lille.svg"
+    }
+]

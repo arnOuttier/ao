@@ -1,45 +1,56 @@
-let root = document.querySelector(":root");
-let themeMode = localStorage.getItem('theme');
-const themeModeToggle = document.querySelector('button.toggle-mode');
-const iconMode = document.querySelectorAll(".icon-mode");
+const buttonToggleMode = document.querySelector('button.toggle-mode');
+const iconLight = document.querySelector(".icon-light");
+const iconDark = document.querySelector(".icon-dark");
 
-const setTheme = themeName => {
-    localStorage.setItem('theme', themeName);
-}
+let darkModeState = false;
 
-const toggleIconThemeMode = () => {
-    themeMode = localStorage.getItem('theme')
+// MediaQueryList object
+const useDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-    iconMode.forEach(icon => {
-        if (icon.classList.contains(`icon-${themeMode}`)) {
-            icon.classList.remove("visible");
-        }
-        else {
-            icon.classList.add("visible");
-        }
-    });
-}
+// Toggles the "dark-mode" class
+function toggleDarkMode(state) {
+    localStorage.setItem("dark", state);
 
-if (themeMode === 'dark') {
-    setTheme('dark');
-}
-
-toggleIconThemeMode()
-
-// When someone clicks the button
-themeModeToggle.addEventListener('click', () => {
-    themeMode = localStorage.getItem('theme')
-
-    if (themeMode !== 'dark') {
-        root.setAttribute('data-theme', 'dark');
-        setTheme('dark');
-    } else {
-        root.setAttribute('data-theme', 'light');
-        setTheme('light');
+    if (state) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.removeAttribute('data-theme', 'dark');
     }
 
-    toggleIconThemeMode();
+    darkModeState = state;
+}
 
+const toggleIconThemeMode = (state) => {
+    if (state) {
+        iconLight.classList.add("visible");
+        iconDark.classList.remove('visible')
+        toggleDarkMode(darkModeState);
+    }
+    else {
+        iconDark.classList.add("visible");
+        iconLight.classList.remove('visible')
+    }
+}
+
+// Initial setting
+toggleDarkMode(localStorage.getItem("dark") == "true");
+toggleIconThemeMode(darkModeState)
+
+// Listen for changes in the OS settings.   
+// Note: the arrow function shorthand works only in modern browsers,
+// for older browsers define the function using the function keyword.
+useDark.addEventListener("change", (event) => {
+    toggleDarkMode(event.matches)
+    toggleIconThemeMode(event.matches)
 });
 
+
+// Toggles the "dark-mode" class on click and sets localStorage state
+buttonToggleMode.addEventListener("click", () => {
+    darkModeState = !darkModeState;
+
+    toggleDarkMode(darkModeState);
+    toggleIconThemeMode(darkModeState)
+});
 

@@ -1,5 +1,8 @@
 ---
-const allEducation = await Astro.glob("../content/education/*.md");
+import educationData from "./i18n/en.json";
+import { astroI18n, t, l } from "astro-i18n";
+
+astroI18n.init(Astro);
 ---
 
 <section id="education">
@@ -9,25 +12,25 @@ const allEducation = await Astro.glob("../content/education/*.md");
   </div>
   <ul>
     {
-      allEducation.map((education) => (
+      educationData.map((education) => (
         <li>
           <div class="group">
             <img
               width="40"
               height="40"
               decoding="async"
-              src={education.frontmatter.universityImage}
+              src={t(education.universityImage)}
               alt="university image"
             />
           </div>
           <div class="group">
-            <h3>{education.frontmatter.university}</h3>
+            <h3>{t(education.university)}</h3>
             <div class="details">
-              <h4>{education.frontmatter.domaine}</h4>
+              <h4>{t(education.domaine)}</h4>
               <div class="time-details">
-                <time>{education.frontmatter.startjob}</time>
+                <time>{t(education.startjob)}</time>
                 <span aria-hidden="true">—</span>
-                <time>{education.frontmatter.endjob}</time>
+                <time>{t(education.endjob)}</time>
               </div>
             </div>
           </div>
@@ -36,7 +39,7 @@ const allEducation = await Astro.glob("../content/education/*.md");
     }
   </ul>
 
-  <a href="" download="cv-arnaud-outtier-it-fr.pdf" class="btn btn-primary"
+  <a href="documents/cv-arnaud-outtier-fr.pdf" download class="btn btn-primary"
     >Download CV
     <svg
       xmlns="http://www.w3.org/2000/svg"

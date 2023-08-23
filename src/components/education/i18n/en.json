@@ -1,0 +1,23 @@
+[
+  {
+    "university": "Citizen Evolution",
+    "domaine": "IT d'exploitation",
+    "startjob": "May 2023",
+    "endjob": "Jul 2023",
+    "universityImage": "/images/citizen-evolution.jpeg"
+  },
+  {
+    "university": "M2I Formation",
+    "domaine": "ISTQB Software Tester",
+    "startjob": "Nov 2019",
+    "endjob": "Mach 2020",
+    "universityImage": "/icons/m2iformation.svg"
+  },
+  {
+    "university": "University of Lille",
+    "domaine": "IT Licence",
+    "startjob": "September 2013",
+    "endjob": "Jun 2016",
+    "universityImage": "/icons/icon-univ-lille.svg"
+  }
+]

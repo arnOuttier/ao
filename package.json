@@ -1,16 +1,20 @@
 {
-  "name": "arnaud-personnal-tailwind",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.8.1",
-    "sass": "^1.63.6"
-  }
+	"name": "arnaud-personnal-tailwind",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"i18n:install": "astro-i18n install",
+		"i18n:sync": "astro-i18n sync",
+		"i18n:extract:keys": "astro-i18n extract:keys"
+	},
+	"dependencies": {
+		"astro": "^2.8.1",
+		"astro-i18n": "^1.8.1",
+		"sass": "^1.63.6"
+	}
 }
