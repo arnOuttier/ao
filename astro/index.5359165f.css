@@ -478,7 +478,7 @@ p:where(.astro-GCN2MC3V) {
   width: min(1200px, 90vw);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
 }
 #main:where(.astro-J7PV25F6) > .group:where(.astro-J7PV25F6) {
